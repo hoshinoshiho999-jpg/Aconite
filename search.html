@@ -16,6 +16,8 @@ window.onload = function(){
     var ele3 =  document.getElementById("resultnum");
 
     /*ソースコード見ないでって言ったじゃん！！えっち！！*/
+        if(element){
+	  element = element.normalize("NFKC");
  if(element == "ゴールドコース"){
 	ele3.textContent = "1件ヒットしました";
       ele.textContent = "各コース詳細説明";
@@ -49,6 +51,7 @@ window.onload = function(){
   else if(element){
     ele3.textContent = "検索結果はありません。異なるワードで試してみてください。";
   }
+	}
 
 }
 
