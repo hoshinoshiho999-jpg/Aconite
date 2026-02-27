@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>ミナセのブログ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ミナセのあれこれを書くブログです🎵">
+<link rel="stylesheet" href="css/style.css">
+<script>
+function action1(event){
+  event.preventDefault();
+
+  var keyword = document.form.text.value;
+  location.href = "blog_minase/search.html?word=" + encodeURIComponent(keyword);
+}
+</script>
+
+<script src="js/openclose.js"></script>
+<script src="js/fixmenu_pagetop.js"></script>
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+</header>
+
+<div id="contents">
+
+  <div id="main">
+
+      <h1>END A 花を喰らわば真実まで</h1>
+
+  <section id="new">
+<dl><br><br>
+ あなたは大島亮一に「真実」を伝えた。<br>
+毒を持つトリカブト、復讐の花言葉を持つクローバー。<br>
+  大島亮二に激しいDVを受けた永瀬春夏は、彼を殺害したこと。<br>
+  それを隠して大島亮一に近づき、惹かれあってしまったこと。<br>
+  いつか来たる「真実」が明らかになる日を恐れ、彼女は自ら大島亮一の行うべき「復讐」を自分で代行したこと......そして、今はおそらく亡き人であること。<br>
+  彼からの返信は「真実を教えてくださり、ありがとうございます」というもののみだった。<br>
+  それを最後に、今も彼とは連絡がつかない。<br><br><br>
+  これが彼と永瀬春夏の本当の幸せだったのだろうか。<br>
+  今となってはそれを祈ることしかできない。<br>
+  
+  <br><br><br><br><br>
+     調査結果を報告する<br>
+    <a href="https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw"
+   class="twitter-share-button"
+   data-size="large"
+   data-text="あなたは本当の『真実』を見つけた：エンドA『花を喰らわば私まで』#ARG #花を喰らわば"
+   data-show-count="false">
+   調査結果を報告する
+</a>
+    <br><br><br><br>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</a>
+</dl>
+</section>
+
+</div>
+<!--/#main-->
+
+<div id="sub">
+
+<p><a href="blog_minase/index.html"><img src="images/banner1.jpg" alt="" class="pc"></a>
+<a href="blog_minase/index.html"><img src="images/banner1_sh.jpg" alt="" class="sh"></a></p>
+<br> <form name="form" action="blog_minase/search.html" class="search-form-3">
+    <label>
+      <input type="text" name="word" placeholder="１語入力">
+    </label>
+    <button type="submit" aria-label="検索"></button>
+</form>
+
+</div>
+<!--/#sub-->
+
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+<footer>
+<small>Copyright&copy; <a href="https://x.com/HosinoHosi_2?s=20">ほしのほし</a> All Rights Reserved.</small>
+<span class="pr"><a href="http://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+
+<!--ページの上部に戻る「↑」ボタン-->
+<p class="nav-fix-pos-pagetop"><a href="blog_minase/index.html">↑</a></p>
+
+<script>
+
+</script>
+
+</body>
+</html>

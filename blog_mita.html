@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Aconite</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<link rel="stylesheet" href="css/style.css">
+
+<script>
+  function action1(event){
+  event.preventDefault();
+
+  var keyword = document.form.text.value;
+  location.href = "search.html?word=" + encodeURIComponent(keyword);
+  }
+  
+let timerId = null;
+
+function mojibake() {
+    const ele = document.getElementById("blog1");
+
+    // 文字が選択されていたら更新しない
+    const selection = window.getSelection();
+    if (selection && selection.toString().length > 0) {
+        timerId = null;
+        return;
+    }
+  let a = Math.random();
+
+if(a>=0.1){
+  ele.textContent = `やっぱり有り得ない。
+なんだよ、隠しカメラを仕掛けるための花束って。
+店長からゴールドコースを注文された時は注文内容を誰にも言うなって言われてたけどさ。
+確かにちょっとここの時給高いとは思っていたけど、こんな事するなんて言われてない。実際に注文を受けるまでこんな仕事だなんて知らなかった。
+店長の鳥居さんもなんだか目が怖いし、もうこの仕事辞めたい。
+辞めなきゃだめだ。
+
+
+追記：対象三田博之にはラスコヴニク実行計画書に準拠した処理を実行済み。(店長)`;
+
+}else{
+  ele.textContent =`やっぱり解芊需ない。
+なんだよ、████を仕掛けるための花束って。
+店長からゴ҈̬̗̤͈̥͔̤͈̥͎̣̬͉͔̙̖̤̉̍̑̏̈̌̄͋̂̃́͋͗̔̌̈̒ー̸͚͈̮̙̣̞̖͎͍͍͎̜̞̤̲͎̦̳̳̥̜̘̃͆̓̃͂̉̔̅̉̈́̏̊͗̋̏̏̑̀̒̓̌̐̈́͆ル̷͔̭̱̣͔̟͖̝̬̞͈̙̰̪̗̖̽͑̓̎͐̐̂̒̊͋͐͐ͅド҉͉̭̠̪̦̥̫͈̭̥̞͕͈͍̱͕͉̱̘̠̅͐͑̐̾͋̆̎̄͛̐̎̎̊͐͐͋̉̄̽̃̚ͅコ̴̥͇̲̥͇̞̗̗͔̠̮͕̝̜̱̘̋́́́̈́͆͒̃̈̿̀̉̿̈̽̌̊̊̈͂̀̚ͅー҉͔͙͓̟̥̟͓̦̯̞͍̰̬͕́͛̌̏̂͆̆̄͆̍̎͂̽̑͒̃́̇̀͂̑͆͐ス̵̯̠̥̭̯̝͓͈̬͚̣͇̞͍͈͇̪̦̆̉̾͌̾͒̓͛͒̋̍́̅̒͌͗̊̍̅͐̔を҈͉̤͚̱̫̣̣͉̪̰̫̩͇̗͊̃͒̀͒̒͆̽̔̐̅̏̀̏̆͑̈̑͌̚̚̚̚注豕ｨ譁��螳ｹ繧定ｪｰ縺ｫ繧りィうなって言われてたけどさ。
+確かにちょっとここの時給高いとは思っていたけど、こんな事するなんて言われてない。螳滄圀縺ｫ豕ｨ譁�ｒ蜿励￠繧�までこんな仕事だなんて知らなかった。
+店長の████んだか目が怖いし、も縺�％縺ｮ莉穂ｺ�辞めたい。
+辞めなきゃだめだ。
+やめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめてやめて
+
+
+追̸̬͇̖̗̗͙̥̮̩̜̜̭̮̠͇̭̩͑̓̀̾͊́͐̿̐́̏̑́̿̽͒̇記̸̮̟̲̲̫̜̣͙͕̩̳͖͕̦̦͉͚̠͓͕̐̏͐̑̎͛̎͋͆̾͛͆̒͗̽͐̏̓̌͑̽͌̐̚ͅ：҉͔̣͖̯͎͕̤̫̣̙̗̦̥͓͖̜̤̟̩͖̮̣̎͌͑́̆̏̃͐̃͛͌̅́͛͌対象████████スコヴニク実行計画書に████処理を実行済み。(店長)`;
+}
+
+
+      timerId =  setTimeout(mojibake,200);
+   }
+
+window.addEventListener("load", function () {
+    mojibake();
+});
+
+// 選択が解除されたら再開
+document.addEventListener("selectionchange", function () {
+    const selection = window.getSelection();
+
+    if (!selection || selection.toString().length === 0) {
+        if (!timerId) {
+            mojibake();
+        }
+    }
+});
+   
+
+ </script>
+ 
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="contents">
+
+<header>
+  <h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="SAMPLE LOGO"></a></h1>
+  
+ 
+<form  name="form" onsubmit="action1(event)" class="search-form-3">
+    <label>
+        <input type="text" name="text"placeholder="１語入力">
+    </label>
+    <button type="submit" aria-label="検索"></button>
+</form>
+
+</header>
+<div id="menubar">
+<nav>
+<ul>
+<li><a href="index.html">ホーム</a></li>
+<li><a href="greeting.html">ご挨拶</a></li>
+<li><a href="menu.html">メニュー</a></li>
+<li><a href="access.html">アクセス</a></li>
+</ul>
+</nav>
+</div>
+<!--/#menubar-->
+
+<main>
+
+
+
+
+<section>
+
+  <h2>スタッフブログ</h2>
+
+ 
+  <div id ="blog1">
+
+
+    </div> 
+
+</section>
+<section>
+
+  <p class="c"><num>7/17</num></p>
+</section>
+
+</main>
+
+<!--/#contents-->
+
+<footer>
+<small>Copyright&copy; <a href="https://x.com/HosinoHosi_2?s=20
+">ほしのほし</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="blog_mita.html"><i class="fas fa-angle-double-up"></i></a></div>
+
+</div>
+<!--/#container-->
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
