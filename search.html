@@ -23,7 +23,7 @@ window.onload = function(){
       ele.textContent = "各コース詳細説明";
       ele.href = "course.html";
   }
-  else if(element == "水瀬春夏"){
+  else if(element == "永瀬春夏"){
  	ele3.textContent = "1件ヒットしました";
       ele.textContent = "職員専用ページ";
       ele.href = "customer.html";
@@ -47,6 +47,18 @@ window.onload = function(){
     else if(element == "鳥居和人"){
 	alert ("パスワードは開業日");
      ele3.textContent = "検索結果はありません。異なるワードで試してみてください。";
+    }
+	   else if((element == "aconite")||(element == "Aconite")){
+ 	ele3.textContent = "1件ヒットしました";
+	   ele.textContent = "aconiteとは";
+	  ele.href = "aboutaconite.html";
+	  
+	   }
+	      else if((element == "clover")||(element == "シロツメグサ")){
+ 	ele3.textContent = "1件ヒットしました";
+	   ele.textContent = "cloverとは";
+	  ele.href = "aboutclober.html";
+	  
       }
   else if(element){
     ele3.textContent = "検索結果はありません。異なるワードで試してみてください。";
