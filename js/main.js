@@ -7,12 +7,17 @@ $(function() {
 
     // スムーススクロールを実行する関数
     // targetにはスクロール先の要素のセレクターまたは'#'（ページトップ）を指定
-    function smoothScroll(target) {
-        // スクロール先の位置を計算（ページトップの場合は0、それ以外は要素の位置）
-        var scrollTo = target === '#' ? 0 : $(target).offset().top;
-        // アニメーションでスムーススクロールを実行
-        $('html, body').animate({scrollTop: scrollTo}, 500);
-    }
+  function smoothScroll(href) {
+  var target = $(href);
+
+  if (target.length === 0) return; // ← これ追加
+
+  var position = target.offset().top;
+
+  $("html, body").animate({
+    scrollTop: position
+  }, 500);
+}
 
     // ページ内リンクとページトップへ戻るボタンにクリックイベントを設定
     $('a[href^="#"], .pagetop').click(function(e) {
