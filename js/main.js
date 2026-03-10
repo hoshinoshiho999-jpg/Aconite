@@ -10,7 +10,7 @@ $(function() {
   function smoothScroll(href) {
   var target = $(href);
 
-  if (target.length === 0) return; // ← これ追加
+  if (target.length === 0) return; 
 
   var position = target.offset().top;
 
